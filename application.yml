@@ -8,16 +8,13 @@ eureka:
     hostname: localhost
 
 management:
-  health:
-    circuitbreakers:
-      enabled: true
   endpoints:
     web:
       exposure:
         include: "*"
   endpoint:
     health:
-      show-details: "always"
+      show-details: ALWAYS
 
 #Relilience4j properties
 resilience4j:
