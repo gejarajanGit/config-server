@@ -7,6 +7,19 @@ eureka:
   instance:
     hostname: localhost
 
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: "always"
+
+//Relilience4j properties
 resilience4j:
   circuitbreaker:
     instances:
