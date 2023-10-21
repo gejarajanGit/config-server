@@ -19,7 +19,7 @@ management:
     health:
       show-details: "always"
 
-//Relilience4j properties
+#Relilience4j properties
 resilience4j:
   circuitbreaker:
     instances:
